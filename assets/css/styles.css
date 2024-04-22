@@ -1,0 +1,84 @@
+/* ========================================== RESETEO GLOBAL ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+a {
+    all: unset;
+  }
+
+/* ========================================== HEADER ========================================== */
+
+.header_container{
+    display: flex;
+    background-color: #1560c257;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container .logo{
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+.header_container .logo span{
+    color: rgb(16, 76, 155);
+    font-weight: bold;
+}
+
+.header_container ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header_container li{
+    cursor: pointer;
+    padding: .8rem;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+}
+
+.header_container li:hover:not(.active){
+    background-color: #1560c257;
+    transition: .5s;
+    transform: translateY(-8%);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
+}
+
+.header_container .active{
+    background-color: #1560c257;
+    transition: .5s;
+    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,.4);
+}
+/* 
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4c8dd6;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #1560c257;
+}
+
+.active {
+    background-color: #5934e0;
+} */
