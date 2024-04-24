@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/pelicula.ico" type="image/x-icon">
     <title>Pelis++</title>
-
+    <link rel="stylesheet" href="assets/css/peliculas.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>peliculas</h1>
-            <ul>
-           
+    <nav class="header_container">
+        <h1 class="logo"><span>P</span>elis<span>++</span></h1>
+        <ul>
             <li><a href="/series.html">Series</a></li>
-            <li><a href="/peliculas.html">Pelicula</a></li>
-            <li><a href="registro.html">Registro</a></li> 
-            <li><a href="https://developer.themoviedb.org/reference/intro/getting-started" target="blank">Api movi</a></li>
-            <li><a href="/iniciar secion.html">Iniciar Secion</a></li>    
-            <li style="float:right"><a class="active" href="/index.html">Inicio</a></li>
-        </nav>
-    </header>
+            <li class="active"><a href="/peliculas.html">Pelicula</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="https://developer.themoviedb.org/reference/intro/getting-started" target="blank">Api movie</a>
+            </li>
+            <li><a href="/iniciar sesion.html">Iniciar Sesion</a></li>
+            <li><a href="/iniciar sesion.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Películas</h1>
+        <div class="generos_container">
+            <h2>Géneros</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="terror" name="terror" />
+                    <label for="terror">Terror</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="suspenso" name="suspenso" />
+                    <label for="suspenso">Suspenso</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="comedia" name="comedia" />
+                    <label for="comedia">Comedia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="romanticas" name="romanticas" />
+                    <label for="romanticas">Románticas</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="accion" name="accion" />
+                    <label for="accion">Acción</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="aventuras" name="aventuras" />
+                    <label for="aventuras">Aventuras</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="infantiles" name="infantiles" />
+                    <label for="infantiles">Infantiles</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="ciencia ficcion" name="ciencia ficcion" />
+                    <label for="ciencia ficcion">Ciencia ficción</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="drama" name="drama" />
+                    <label for="drama">Drama</label>
+                </li>
+            </ul>
+        </div>
+        <div class="peliculas_container" id="peliculas_container">
+            <!-- Esto se genera en el JS -->
+        </div>
+    </main>
+
+    <script src="assets/js/peliculas.js"></script>
 </body>
+
 </html>
