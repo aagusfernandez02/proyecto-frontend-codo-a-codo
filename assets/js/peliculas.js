@@ -146,57 +146,148 @@ const array_peliculas = [
     }
 ];
 
+let generosSeleccionados = [];
+
 let peliculasContainer = document.getElementById('peliculas_container');
 
-array_peliculas.forEach(pelicula => {
-    // Crear elementos HTML para la película
-    const peliculaDiv = document.createElement('div');
-    peliculaDiv.classList.add('pelicula_card');
+const renderizarPeliculas = (peliculas) => {
+    peliculasContainer.innerHTML = '';  // Limpiar contenedor de películas
 
-    const tituloH3 = document.createElement('h3');
-    tituloH3.textContent = pelicula.titulo;
-    peliculaDiv.appendChild(tituloH3);
+    peliculas.forEach(pelicula => {
+        const peliculaDiv = document.createElement('div');
+        peliculaDiv.classList.add('pelicula_card');
 
-    const detallesDiv = document.createElement('div');
-    detallesDiv.classList.add('detalles');
+        const tituloH3 = document.createElement('h3');
+        tituloH3.textContent = pelicula.titulo;
+        peliculaDiv.appendChild(tituloH3);
 
-    const duracionP = document.createElement('p');
-    duracionP.classList.add('duracion');
-    duracionP.textContent = `Duración: ${pelicula.duracion} min`;
-    detallesDiv.appendChild(duracionP);
+        const detallesDiv = document.createElement('div');
+        detallesDiv.classList.add('detalles');
 
-    const estrenoP = document.createElement('p');
-    estrenoP.classList.add('estreno');
-    estrenoP.textContent = `Estreno: ${pelicula.fecha_estreno}`;
-    detallesDiv.appendChild(estrenoP);
+        const duracionP = document.createElement('p');
+        duracionP.classList.add('duracion');
+        duracionP.textContent = `Duración: ${pelicula.duracion} min`;
+        detallesDiv.appendChild(duracionP);
 
-    peliculaDiv.appendChild(detallesDiv);
+        const estrenoP = document.createElement('p');
+        estrenoP.classList.add('estreno');
+        estrenoP.textContent = `Estreno: ${pelicula.fecha_estreno}`;
+        detallesDiv.appendChild(estrenoP);
 
-    const imagenImg = document.createElement('img');
-    imagenImg.src = pelicula.imagen;
-    imagenImg.alt = `${pelicula.titulo} poster`;
-    peliculaDiv.appendChild(imagenImg);
+        peliculaDiv.appendChild(detallesDiv);
 
-    const descripcionP = document.createElement('p');
-    descripcionP.classList.add('descripcion');
-    descripcionP.textContent = pelicula.descripcion;
-    peliculaDiv.appendChild(descripcionP);
+        const imagenImg = document.createElement('img');
+        imagenImg.src = pelicula.imagen;
+        imagenImg.alt = `${pelicula.titulo} poster`;
+        peliculaDiv.appendChild(imagenImg);
 
-    const generosDiv = document.createElement('div');
-    generosDiv.classList.add('generos');
+        const descripcionP = document.createElement('p');
+        descripcionP.classList.add('descripcion');
+        descripcionP.textContent = pelicula.descripcion;
+        peliculaDiv.appendChild(descripcionP);
 
-    const generosH5 = document.createElement('h5');
-    generosH5.textContent = 'Géneros:';
-    generosDiv.appendChild(generosH5);
+        const generosDiv = document.createElement('div');
+        generosDiv.classList.add('generos');
 
-    pelicula.genero.forEach(genero => {
-        const generoP = document.createElement('p');
-        generoP.textContent = genero;
-        generosDiv.appendChild(generoP);
+        const generosH5 = document.createElement('h5');
+        generosH5.textContent = 'Géneros:';
+        generosDiv.appendChild(generosH5);
+
+        pelicula.genero.forEach(genero => {
+            const generoP = document.createElement('p');
+            generoP.textContent = genero;
+            generosDiv.appendChild(generoP);
+        });
+
+        peliculaDiv.appendChild(generosDiv);
+
+        // Agregar la película al contenedor
+        peliculasContainer.appendChild(peliculaDiv);
     });
+}
 
-    peliculaDiv.appendChild(generosDiv);
+const handleCheckboxChange = (event) => {
+    const checkbox = event.target;
+    const genero = checkbox.id;
 
-    // Agregar la película al contenedor
-    peliculasContainer.appendChild(peliculaDiv);
+    // Chequeo si debo agregar/quitar el genero
+    if (checkbox.checked) {
+        generosSeleccionados.push(genero);
+    } else {
+        const index = generosSeleccionados.indexOf(genero);
+        if (index !== -1) {
+            generosSeleccionados.splice(index, 1);
+        }
+    }
+
+    // Filtrar las películas segun genero
+    const peliculasFiltradas = array_peliculas.filter(pelicula =>
+        generosSeleccionados.every(genero => pelicula.genero.includes(genero))
+    );
+
+    // Renderizar las películas filtradas
+    renderizarPeliculas(peliculasFiltradas);
+}
+
+// Agregar un event listener a cada checkbox
+document.querySelectorAll('.generos_container input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', handleCheckboxChange);
 });
+
+// Renderizar todas las películas al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    renderizarPeliculas(array_peliculas);
+});
+
+// array_peliculas.forEach(pelicula => {
+//     // Crear elementos HTML para la película
+//     const peliculaDiv = document.createElement('div');
+//     peliculaDiv.classList.add('pelicula_card');
+
+//     const tituloH3 = document.createElement('h3');
+//     tituloH3.textContent = pelicula.titulo;
+//     peliculaDiv.appendChild(tituloH3);
+
+//     const detallesDiv = document.createElement('div');
+//     detallesDiv.classList.add('detalles');
+
+//     const duracionP = document.createElement('p');
+//     duracionP.classList.add('duracion');
+//     duracionP.textContent = `Duración: ${pelicula.duracion} min`;
+//     detallesDiv.appendChild(duracionP);
+
+//     const estrenoP = document.createElement('p');
+//     estrenoP.classList.add('estreno');
+//     estrenoP.textContent = `Estreno: ${pelicula.fecha_estreno}`;
+//     detallesDiv.appendChild(estrenoP);
+
+//     peliculaDiv.appendChild(detallesDiv);
+
+//     const imagenImg = document.createElement('img');
+//     imagenImg.src = pelicula.imagen;
+//     imagenImg.alt = `${pelicula.titulo} poster`;
+//     peliculaDiv.appendChild(imagenImg);
+
+//     const descripcionP = document.createElement('p');
+//     descripcionP.classList.add('descripcion');
+//     descripcionP.textContent = pelicula.descripcion;
+//     peliculaDiv.appendChild(descripcionP);
+
+//     const generosDiv = document.createElement('div');
+//     generosDiv.classList.add('generos');
+
+//     const generosH5 = document.createElement('h5');
+//     generosH5.textContent = 'Géneros:';
+//     generosDiv.appendChild(generosH5);
+
+//     pelicula.genero.forEach(genero => {
+//         const generoP = document.createElement('p');
+//         generoP.textContent = genero;
+//         generosDiv.appendChild(generoP);
+//     });
+
+//     peliculaDiv.appendChild(generosDiv);
+
+//     // Agregar la película al contenedor
+//     peliculasContainer.appendChild(peliculaDiv);
+// });
