@@ -24,6 +24,7 @@ a {
     color: #fff;
     padding-left: 1rem;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .header_container .logo span {
