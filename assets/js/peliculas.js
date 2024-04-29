@@ -229,65 +229,10 @@ const handleCheckboxChange = (event) => {
     renderizarPeliculas(peliculasFiltradas);
 }
 
-// Agregar un event listener a cada checkbox
 document.querySelectorAll('.generos_container input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', handleCheckboxChange);
 });
 
-// Renderizar todas las películas al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     renderizarPeliculas(array_peliculas);
 });
-
-// array_peliculas.forEach(pelicula => {
-//     // Crear elementos HTML para la película
-//     const peliculaDiv = document.createElement('div');
-//     peliculaDiv.classList.add('pelicula_card');
-
-//     const tituloH3 = document.createElement('h3');
-//     tituloH3.textContent = pelicula.titulo;
-//     peliculaDiv.appendChild(tituloH3);
-
-//     const detallesDiv = document.createElement('div');
-//     detallesDiv.classList.add('detalles');
-
-//     const duracionP = document.createElement('p');
-//     duracionP.classList.add('duracion');
-//     duracionP.textContent = `Duración: ${pelicula.duracion} min`;
-//     detallesDiv.appendChild(duracionP);
-
-//     const estrenoP = document.createElement('p');
-//     estrenoP.classList.add('estreno');
-//     estrenoP.textContent = `Estreno: ${pelicula.fecha_estreno}`;
-//     detallesDiv.appendChild(estrenoP);
-
-//     peliculaDiv.appendChild(detallesDiv);
-
-//     const imagenImg = document.createElement('img');
-//     imagenImg.src = pelicula.imagen;
-//     imagenImg.alt = `${pelicula.titulo} poster`;
-//     peliculaDiv.appendChild(imagenImg);
-
-//     const descripcionP = document.createElement('p');
-//     descripcionP.classList.add('descripcion');
-//     descripcionP.textContent = pelicula.descripcion;
-//     peliculaDiv.appendChild(descripcionP);
-
-//     const generosDiv = document.createElement('div');
-//     generosDiv.classList.add('generos');
-
-//     const generosH5 = document.createElement('h5');
-//     generosH5.textContent = 'Géneros:';
-//     generosDiv.appendChild(generosH5);
-
-//     pelicula.genero.forEach(genero => {
-//         const generoP = document.createElement('p');
-//         generoP.textContent = genero;
-//         generosDiv.appendChild(generoP);
-//     });
-
-//     peliculaDiv.appendChild(generosDiv);
-
-//     // Agregar la película al contenedor
-//     peliculasContainer.appendChild(peliculaDiv);
-// });
