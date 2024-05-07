@@ -8,36 +8,38 @@
 
 a {
     all: unset;
+  }
+:root {
+    --bac-color:  #1560c257;
 }
 
 /* ========================================== HEADER ========================================== */
 
-.header_container {
+.header_container{
     display: flex;
-    background-color: #1560c257;
+    background-color: var(--bac-color);
     height: 10vh;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_container .logo {
+.header_container .logo{
     color: #fff;
     padding-left: 1rem;
     font-size: 2rem;
-    cursor: pointer;
 }
 
-.header_container .logo span {
+.header_container .logo span{
     color: rgb(16, 76, 155);
     font-weight: bold;
 }
 
-.header_container ul {
+.header_container ul{
     display: flex;
     list-style-type: none;
 }
 
-.header_container li {
+.header_container li{
     cursor: pointer;
     padding: .8rem;
     font-weight: bold;
@@ -45,70 +47,123 @@ a {
     transition: .5s;
 }
 
-.header_container li:hover:not(.active) {
-    background-color: #1560c257;
+.header_container li:hover:not(.active){
+    background-color: var(--bac-color);
     transition: .5s;
     transform: translateY(-8%);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, .4);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
 }
 
-.header_container .active {
-    background-color: #1560c257;
+.header_container .active{
+    background-color: var(--bac-color);
     transition: .5s;
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .4);
+    box-shadow: inset 0px 1px 1px 0px rgba(19, 230, 230, 0.4);
 }
-
 /*nuevo*/
 
+.banner {
+background-image: url(/assets/imagenes/fondo.jpg);
+width: 100%;
+height: 30vh;
+font-weight: lighter;
+color: azure;
+text-align: center;
+text-shadow: 2px 2px #003cff;
+}
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-
-}
-
-
-.carrusel {
-    width: 300%;
-    height: 300%;
-    padding-bottom: 0%;
-    overflow: auto;
-    grid-column: 3;
+    background-color: var(--bac-color);
+    }
+       
+      
+.carrusel {width:100%; 
+    height:100%; 
+    padding-bottom: 0%; 
+    overflow:auto; 
+    grid-column: 3 ;
     margin-top: 30px;
     font-weight: bold;
     color: blue;
-}
-
-.carrusel iframe {
-    position: absolute;
-    animation: carrusel 20s infinite;
-    opacity: 1;
-    width: 300px;
-    height: 300px;
-
-}
-
-@keyframes carrusel {
-    25% {
-        opacity: 1;
+    text-align: center;
+    text-shadow: 2px 2px #6769f0;
     }
-
-    40% {
-        opacity: 0;
+    
+    
+   .caras{display: none}
+   
+    iframe {
+        vertical-align: middle;
+       
+    
     }
+.slide{
+  max-width: 1000vw;
+  position: relative;
+  margin: auto;
+  background-color: var(--bac-color);
 }
 
-.carrusel iframe:nth-child(4) {
-    animation-delay: 0s;
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(4, 42, 122, 0.973);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.carrusel iframe:nth-child(3) {
-    animation-delay: 5s;
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.carrusel iframe:nth-child(2) {
-    animation-delay: 10s;
+
+.prev:hover, .next:hover {
+  background-color: rgba(45, 120, 233, 0.8);
 }
 
-.carrusel iframe:nth-child(1) {
-    animation-delay: 15s;
+.circulo{
+    background-color: var(--bac-color);
 }
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #112d69;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  background-color: var(--bac-color);
+}
+
+.active, .dot:hover {
+  background-color: #0906db;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 11px}
+} 
