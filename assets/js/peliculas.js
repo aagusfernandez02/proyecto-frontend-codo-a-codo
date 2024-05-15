@@ -6,7 +6,8 @@ const array_peliculas = [
         "descripcion": "La saga épica de la familia Corleone, dirigida por el patriarca Don Vito Corleone. La película sigue la vida de Michael Corleone mientras se sumerge en el mundo del crimen organizado y lucha por mantener el imperio de su familia.",
         "duracion": 175,
         "genero": ["drama", "crimen"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
@@ -14,7 +15,8 @@ const array_peliculas = [
         "descripcion": "Basada en la obra maestra de J.R.R. Tolkien, la película sigue a un grupo de nueve compañeros que se embarcan en una búsqueda para destruir un anillo mágico y evitar que caiga en manos del malvado Señor Oscuro Sauron.",
         "duracion": 178,
         "genero": ["fantasía", "aventura", "acción"],
-        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/1a4ee89507e9a33c3493ee24b64e56e66b5e48e14a3f707141c6ca0a688320ec.jpg"
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/1a4ee89507e9a33c3493ee24b64e56e66b5e48e14a3f707141c6ca0a688320ec.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Forrest Gump",
@@ -22,7 +24,8 @@ const array_peliculas = [
         "descripcion": "Forrest Gump, un hombre con un coeficiente intelectual bajo, pero un corazón grande, narra su vida extraordinaria que lo lleva a encontrarse con presidentes, guerras, amor verdadero y la creación del famoso slogan de camisetas.",
         "duracion": 142,
         "genero": ["drama", "comedia"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Matrix",
@@ -30,7 +33,8 @@ const array_peliculas = [
         "descripcion": "Un hacker llamado Neo descubre que el mundo en el que vive es una simulación controlada por máquinas inteligentes. Se une a la resistencia para liberar a la humanidad y descubrir su verdadera realidad.",
         "duracion": 136,
         "genero": ["ciencia ficción", "acción"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "La Lista de Schindler",
@@ -38,7 +42,8 @@ const array_peliculas = [
         "descripcion": "Basada en hechos reales, la película cuenta la historia de Oskar Schindler, un empresario alemán que salva a más de mil judíos durante el Holocausto al emplearlos en su fábrica y poner sus vidas por encima del beneficio.",
         "duracion": 195,
         "genero": ["drama", "historia"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Rey León",
@@ -46,7 +51,8 @@ const array_peliculas = [
         "descripcion": "Esta película animada de Disney sigue la vida del león Simba, quien debe enfrentar su destino como rey de la sabana después de que su padre, Mufasa, es traicionado y asesinado por su tío Scar.",
         "duracion": 88,
         "genero": ["infantil", "aventura", "drama"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Gran Hotel Budapest",
@@ -54,7 +60,8 @@ const array_peliculas = [
         "descripcion": "El conserje de un famoso hotel europeo y su joven protegido se convierten en cómplices de una trama criminal que involucra el robo de una valiosa pintura renacentista y la lucha por una enorme fortuna familiar.",
         "duracion": 99,
         "genero": ["comedia", "drama"],
-        "imagen": "https://hips.hearstapps.com/hmg-prod/images/gran-hotel-budapest-cartel-1513779850.jpg"
+        "imagen": "https://hips.hearstapps.com/hmg-prod/images/gran-hotel-budapest-cartel-1513779850.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Club de la Pelea",
@@ -62,7 +69,8 @@ const array_peliculas = [
         "descripcion": "Un hombre descontento con su vida mediocre forma un club de lucha clandestino con un carismático vendedor de jabón. Pronto se ven envueltos en un submundo oscuro de liberación emocional a través de la violencia.",
         "duracion": 139,
         "genero": ["drama", "suspenso"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "La La Land",
@@ -70,7 +78,8 @@ const array_peliculas = [
         "descripcion": "En Los Ángeles, un pianista de jazz y una aspirante a actriz se enamoran mientras persiguen sus sueños en una ciudad conocida por destruir esperanzas y romances. Pero el éxito y el amor pueden ser incompatibles.",
         "duracion": 128,
         "genero": ["romantica", "musical", "drama"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Pulp Fiction",
@@ -78,7 +87,8 @@ const array_peliculas = [
         "descripcion": "Esta película entrelaza varias historias de crimen y redención en Los Ángeles. Desde un par de asesinos a sueldo hasta un boxeador en decadencia y una pareja de gánsteres, las vidas de todos se cruzan en un torbellino de violencia y humor negro.",
         "duracion": 154,
         "genero": ["drama", "crimen"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Interestelar",
@@ -86,7 +96,8 @@ const array_peliculas = [
         "descripcion": "En un futuro donde la Tierra se está volviendo inhabitable, un grupo de exploradores emprende un viaje a través de un agujero de gusano en busca de un nuevo hogar para la humanidad. Pero el tiempo y el espacio se distorsionan en este viaje cósmico.",
         "duracion": 169,
         "genero": ["ciencia ficción", "aventura", "drama"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Silencio de los Inocentes",
@@ -94,7 +105,8 @@ const array_peliculas = [
         "descripcion": "Una joven agente del FBI se alía con un brillante pero perturbado psicópata encarcelado para atrapar a otro asesino en serie. La caza se convierte en un juego mortal de ingenio y supervivencia.",
         "duracion": 118,
         "genero": ["suspenso", "crimen", "drama"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Resplandor",
@@ -102,7 +114,8 @@ const array_peliculas = [
         "descripcion": "Un hombre acepta un trabajo de cuidador de un hotel aislado durante el invierno con su familia. Pero mientras el hotel se vuelve cada vez más siniestro, su cordura comienza a desmoronarse, llevándolo a un destino aterrador.",
         "duracion": 146,
         "genero": ["terror", "suspenso"],
-        "imagen": "https://es.web.img3.acsta.net/pictures/14/04/15/10/46/568345.jpg"
+        "imagen": "https://es.web.img3.acsta.net/pictures/14/04/15/10/46/568345.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Titanic",
@@ -110,7 +123,8 @@ const array_peliculas = [
         "descripcion": "Una joven aristócrata se enamora de un artista pobre a bordo del Titanic, el lujoso transatlántico que se hunde trágicamente en su viaje inaugural. Su amor se enfrenta a la tragedia mientras luchan por sobrevivir al desastre.",
         "duracion": 195,
         "genero": ["romantica", "drama", "historia"],
-        "imagen": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg"
+        "imagen": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "El Rey Arturo: La Leyenda de la Espada",
@@ -118,7 +132,8 @@ const array_peliculas = [
         "descripcion": "Arturo, un joven callejero, descubre su verdadera identidad cuando saca una espada mágica de una roca. Con la ayuda de la resistencia, debe enfrentarse al tirano que mató a su padre y reclamar su derecho de nacimiento al trono.",
         "duracion": 126,
         "genero": ["acción", "aventura", "fantasía"],
-        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/6879a12b8d910e32186b3ca136f3f5da77668d03c6cdac926a3c872b9bbc7cf1.jpg"
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/6879a12b8d910e32186b3ca136f3f5da77668d03c6cdac926a3c872b9bbc7cf1.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Parasite",
@@ -126,7 +141,8 @@ const array_peliculas = [
         "descripcion": "Una familia pobre se infiltra en la vida de una adinerada familia al conseguir empleos en su casa. Pero cuando los secretos de ambas familias salen a la luz, la situación se vuelve cada vez más peligrosa y retorcida.",
         "duracion": 132,
         "genero": ["suspenso", "comedia", "drama"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png"
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
+        "tipo": "pelicula"
     },
     {
         "titulo": "La Forma del Agua",
@@ -134,7 +150,8 @@ const array_peliculas = [
         "descripcion": "En un laboratorio secreto del gobierno, una mujer de limpieza muda se enamora de una criatura anfibia cautiva. Juntos, deben luchar contra fuerzas poderosas y prejuicios sociales para encontrar la libertad y el amor.",
         "duracion": 123,
         "genero": ["fantasía", "romantica", "drama"],
-        "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/bc/2b/bc2bc8ff4b110376ba8c7273534a4ea5.jpg"
+        "imagen": "https://images.cdn3.buscalibre.com/fit-in/360x360/bc/2b/bc2bc8ff4b110376ba8c7273534a4ea5.jpg",
+        "tipo": "pelicula"
     },
     {
         "titulo": "Avatar",
@@ -142,11 +159,48 @@ const array_peliculas = [
         "descripcion": "En el exuberante planeta Pandora, un exmarine parapléjico se une a la misión de colonización humana y se enamora de la cultura y el pueblo nativo Na'vi. Su lealtad es puesta a prueba cuando se ve atrapado entre dos mundos en guerra.",
         "duracion": 162,
         "genero": ["ciencia ficción", "aventura", "acción"],
-        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/ae4816cade1a5b7f29787d0b89610132c72c7747041481c6619b9cc3302c0101.jpg"
+        "imagen": "https://m.media-amazon.com/images/S/pv-target-images/ae4816cade1a5b7f29787d0b89610132c72c7747041481c6619b9cc3302c0101.jpg",
+        "tipo": "pelicula"
+    },
+    {
+        "titulo": "Breaking Bad",
+        "fecha_estreno": "2008-01-20",
+        "descripcion": "Un profesor de química de secundaria, diagnosticado con cáncer de pulmón terminal, se convierte en fabricante y distribuidor de metanfetaminas para asegurar el futuro financiero de su familia.",
+        "duracion": 49,
+        "genero": ["drama", "crimen", "suspenso"],
+        "imagen": "https://es.web.img3.acsta.net/pictures/18/04/04/22/52/3191575.jpg",
+        "tipo": "serie"
+    },
+    {
+        "titulo": "Juego de Tronos",
+        "fecha_estreno": "2011-04-17",
+        "descripcion": "Nobleza y familias luchan por el control del Trono de Hierro en el continente ficticio de Poniente, mientras que antiguos y nuevos enemigos amenazan con destruirlos a todos.",
+        "duracion": 57,
+        "genero": ["drama", "fantasía", "aventura"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg",
+        "tipo": "serie"
+    },
+    {
+        "titulo": "Stranger Things",
+        "fecha_estreno": "2016-07-15",
+        "descripcion": "En la década de 1980, un grupo de niños de un pequeño pueblo se encuentra con una niña con poderes sobrenaturales y desentrañan un misterio que involucra experimentos secretos y criaturas de otra dimensión.",
+        "duracion": 51,
+        "genero": ["ciencia ficción", "drama", "suspenso"],
+        "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGylal0DCls7T5nbv6VVn1ayU7QWeCsOtZevSNoxiHVwQLy-oUk1GYLmwu3Mr_l9f9cDbs",
+        "tipo": "serie"
+    },
+    {
+        "titulo": "La Casa de Papel",
+        "fecha_estreno": "2017-05-02",
+        "descripcion": "Un grupo de ladrones, liderado por 'El Profesor', lleva a cabo un ambicioso plan para realizar el mayor atraco en la historia de España, asaltando la Fábrica Nacional de Moneda y Timbre.",
+        "duracion": 70,
+        "genero": ["drama", "crimen", "suspenso"],
+        "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwk0QuiWrfMEopih4s9GkOPu60FVlSnb661crrBZDan5uyz29gCY2IFEh-fgZ-SKZDmHvBiw",
+        "tipo": "serie"
     }
 ];
-
 let generosSeleccionados = [];
+let tipoSeleccionado = ["pelicula"];
 
 let peliculasContainer = document.getElementById('peliculas_container');
 
@@ -220,19 +274,69 @@ const handleCheckboxChange = (event) => {
         }
     }
 
-    // Filtrar las películas segun genero
-    const peliculasFiltradas = array_peliculas.filter(pelicula =>
-        generosSeleccionados.every(genero => pelicula.genero.includes(genero))
-    );
+    let peliculasFiltradas = [];
+    if(tipoSeleccionado.length==0){
+        peliculasFiltradas = [];
+    } else {
+        peliculasFiltradas = array_peliculas.filter(pelicula =>
+            generosSeleccionados.every(genero => pelicula.genero.includes(genero)) &&
+            (tipoSeleccionado.length === 0 || tipoSeleccionado.includes(pelicula.tipo))
+        );
+    }
 
     // Renderizar las películas filtradas
     renderizarPeliculas(peliculasFiltradas);
 }
 
+
+// EVENTOS
 document.querySelectorAll('.generos_container input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', handleCheckboxChange);
 });
-
 document.addEventListener('DOMContentLoaded', () => {
     renderizarPeliculas(array_peliculas);
+});
+
+document.getElementById('btn_peliculas').addEventListener('click', (e)=>{
+    h1 = e.target;
+    h1.classList.toggle('selected');
+    if(h1.classList.contains('selected')){
+        tipoSeleccionado.push("pelicula");
+    } else {
+        const index = tipoSeleccionado.indexOf("pelicula");
+        tipoSeleccionado.splice(index, 1);
+    }
+    console.log(tipoSeleccionado)
+    // Filtrar las películas segun genero
+    let peliculasFiltradas = [];
+    if(tipoSeleccionado.length==0){
+        peliculasFiltradas = [];
+    } else {
+        peliculasFiltradas = array_peliculas.filter(pelicula =>
+            generosSeleccionados.every(genero => pelicula.genero.includes(genero)) &&
+            (tipoSeleccionado.length === 0 || tipoSeleccionado.includes(pelicula.tipo))
+        );
+    }
+
+    // Renderizar las películas filtradas
+    renderizarPeliculas(peliculasFiltradas);
+});
+document.getElementById('btn_series').addEventListener('click', (e)=>{
+    h1 = e.target;
+    h1.classList.toggle('selected');
+    if(h1.classList.contains('selected')){
+        tipoSeleccionado.push("serie");
+    } else {
+        const index = tipoSeleccionado.indexOf("serie");
+        tipoSeleccionado.splice(index, 1);
+    }
+    console.log(tipoSeleccionado)
+    // Filtrar las películas segun genero
+    const peliculasFiltradas = array_peliculas.filter(pelicula =>
+        generosSeleccionados.every(genero => pelicula.genero.includes(genero)) &&
+        (tipoSeleccionado.length === 0 || tipoSeleccionado.includes(pelicula.tipo))
+    );
+
+    // Renderizar las películas filtradas
+    renderizarPeliculas(peliculasFiltradas);
 });
