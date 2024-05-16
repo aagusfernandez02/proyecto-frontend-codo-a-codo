@@ -32,7 +32,7 @@ const array_peliculas = [
         "fecha_estreno": "1999-03-31",
         "descripcion": "Un hacker llamado Neo descubre que el mundo en el que vive es una simulación controlada por máquinas inteligentes. Se une a la resistencia para liberar a la humanidad y descubrir su verdadera realidad.",
         "duracion": 136,
-        "genero": ["ciencia ficción", "acción"],
+        "genero": ["ciencia ficcion", "acción"],
         "imagen": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
         "tipo": "pelicula"
     },
@@ -95,7 +95,7 @@ const array_peliculas = [
         "fecha_estreno": "2014-11-05",
         "descripcion": "En un futuro donde la Tierra se está volviendo inhabitable, un grupo de exploradores emprende un viaje a través de un agujero de gusano en busca de un nuevo hogar para la humanidad. Pero el tiempo y el espacio se distorsionan en este viaje cósmico.",
         "duracion": 169,
-        "genero": ["ciencia ficción", "aventura", "drama"],
+        "genero": ["ciencia ficcion", "aventura", "drama"],
         "imagen": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
         "tipo": "pelicula"
     },
@@ -158,7 +158,7 @@ const array_peliculas = [
         "fecha_estreno": "2009-12-10",
         "descripcion": "En el exuberante planeta Pandora, un exmarine parapléjico se une a la misión de colonización humana y se enamora de la cultura y el pueblo nativo Na'vi. Su lealtad es puesta a prueba cuando se ve atrapado entre dos mundos en guerra.",
         "duracion": 162,
-        "genero": ["ciencia ficción", "aventura", "acción"],
+        "genero": ["ciencia ficcion", "aventura", "acción"],
         "imagen": "https://m.media-amazon.com/images/S/pv-target-images/ae4816cade1a5b7f29787d0b89610132c72c7747041481c6619b9cc3302c0101.jpg",
         "tipo": "pelicula"
     },
@@ -185,7 +185,7 @@ const array_peliculas = [
         "fecha_estreno": "2016-07-15",
         "descripcion": "En la década de 1980, un grupo de niños de un pequeño pueblo se encuentra con una niña con poderes sobrenaturales y desentrañan un misterio que involucra experimentos secretos y criaturas de otra dimensión.",
         "duracion": 51,
-        "genero": ["ciencia ficción", "drama", "suspenso"],
+        "genero": ["ciencia ficcion", "drama", "suspenso"],
         "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGylal0DCls7T5nbv6VVn1ayU7QWeCsOtZevSNoxiHVwQLy-oUk1GYLmwu3Mr_l9f9cDbs",
         "tipo": "serie"
     },
@@ -200,7 +200,7 @@ const array_peliculas = [
     }
 ];
 let generosSeleccionados = [];
-let tipoSeleccionado = ["pelicula"];
+let tipoSeleccionado = ["pelicula", "serie"];
 
 let peliculasContainer = document.getElementById('peliculas_container');
 
@@ -254,6 +254,10 @@ const renderizarPeliculas = (peliculas) => {
         });
 
         peliculaDiv.appendChild(generosDiv);
+
+        if(pelicula.tipo == 'serie'){
+            peliculaDiv.classList.add('serie_card')
+        }
 
         // Agregar la película al contenedor
         peliculasContainer.appendChild(peliculaDiv);
@@ -332,10 +336,15 @@ document.getElementById('btn_series').addEventListener('click', (e)=>{
     }
     console.log(tipoSeleccionado)
     // Filtrar las películas segun genero
-    const peliculasFiltradas = array_peliculas.filter(pelicula =>
-        generosSeleccionados.every(genero => pelicula.genero.includes(genero)) &&
-        (tipoSeleccionado.length === 0 || tipoSeleccionado.includes(pelicula.tipo))
-    );
+    let peliculasFiltradas = [];
+    if(tipoSeleccionado.length==0){
+        peliculasFiltradas = [];
+    } else {
+        peliculasFiltradas = array_peliculas.filter(pelicula =>
+            generosSeleccionados.every(genero => pelicula.genero.includes(genero)) &&
+            (tipoSeleccionado.length === 0 || tipoSeleccionado.includes(pelicula.tipo))
+        );
+    }
 
     // Renderizar las películas filtradas
     renderizarPeliculas(peliculasFiltradas);

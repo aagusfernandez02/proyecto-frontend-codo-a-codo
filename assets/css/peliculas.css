@@ -57,6 +57,10 @@ main>h1 {
     box-shadow: 5px 15px 15px -3px rgba(0, 0, 0, 0.25);
 }
 
+.serie_card{
+    background-color: #2f15c257;
+}
+
 .pelicula_card h3 {
     text-align: center;
     font-size: 1.3rem;
