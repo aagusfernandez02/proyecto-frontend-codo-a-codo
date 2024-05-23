@@ -5,107 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="shortcut icon" href="assets/pelicula.ico" type="image/x-icon">
-    <title>Pelis++</title>
+    <link rel="stylesheet" href="/assets/css/registro.css">
+    <title> Pelis++ </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    
     <header>
         <nav class="header_container">
             <h1 class="logo"><a href="/index.html"><span>P</span>elis<span>++</span></a></h1>
             <ul>
-                
-                <li><a href="/peliculas.html">Peliculas y series</a></li>
-                <li class="active"><a href="/registro.html">Registro</a></li>
-               
+                <li><a href="/series.html">Series</a></li>
+                <li><a href="/peliculas.html">Pelicula</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="https://developer.themoviedb.org/reference/intro/getting-started" target="blank">Api movie</a></li>
                 <li><a href="/iniciar sesion.html">Iniciar Sesion</a></li>
-                <li><a href="/registro.html">Inicio</a></li>
+                <li class="active"><a href="/registro.html">Inicio</a></li>
             </ul>
         </nav>
     </header>
+    
+    <section class="formContainer">
+        <div class="titulos">
+            <h1 class="tituloPpal">Crea tu cuenta</h1>
+            <h5>Con ella podrás ver contenido en tus dispositivos preferidos</h5>
+            <p>* Indica que es un capo obligatorio</p>
+        </div>
+        
+        <div class="form">
 
-    <br><h1>Registro</h1><br><br>
+            <form action="" id="form register" method="get">
+                
+                <label for="email">Correo electrónico*</label><br>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" size="30"><br><br>
 
-    <section>
-        <form action="" id="form register" method="get">
-            <div>
-                <label for="firstName">Nombre</label>
-                <input type="text" id="firstName">
-            </div>
-            <br>
-            <div>
-                <label for="lastName">Apellido</label>
-                <input type="text" id="lastName" >
-            </div>
-            <br>
-            <div>
-                <label for="birthdate">Fecha de nacimiento</label>
-                <input type="date" name="birthdate" id="birthdate" >
-            </div>
-            <br>
-            <div>
-                <label for="country">País:</label>
+                <label for="password">Contraseña*</label><br>
+                <input type="password" id="password" placeholder="Esta será tu nueva contraseña" minlength="8" maxlength="18" size="30">
+                <p>Debe tener mínimo 8 caracteres</p>
+                
+                <label for="firstName">Nombre*</label> <br>
+                <input type="text" id="firstName" size="30"><br><br>
+
+                <label for="lastName">Apellido*</label><br>
+                <input type="text" id="lastName" size="30"><br><br>
+
+                <label for="birthdate">Fecha de nacimiento*</label><br>
+                <input type="date" name="birthdate" id="birthdate" size="30"><br><br>
+
+                <label for="country">País*</label><br>
                 <select name="country" id="country" >
-                    <option value=" ">Seleccioná una opción</option>
+                    <option value=" "> Seleccioná una opción </option>
                     <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
                     <option value="BR">Brasil</option>
                     <option value="CO">Colombia</option>
+                    <option value="ES">España</option>
+                    <option value="MX">México</option>
                     <option value="UY">Uruguay</option>
-                    <!--Se pueden agregar más-->
-                </select>
-            </div>
-            <br>
-            <div>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" placeholder="ejemplo@gmail.com" size="20">
-            </div> 
-            <br>
-            <div>
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" placeholder="Esta será tu nueva contraseña" minlength="8" maxlength="18" size="25">
-                <p>La contraseña debe tener mínimo 8 caracteres</p>
-            </div>
-            <br>
-            <!--En caso que tengamos opc de ver  pelis  de forma gratuita y otra paga con algunos beneficios-->
-            <p>Elegí la suscripción que mejor se adapte a vos:</p>
-            <br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">Estándar</label>
-                <ul>
-                    <li>Acceso a películas y series</li><br><br>
-                </ul>
+                </select><br><br>
+                <!--En caso que tengamos opc de ver  pelis  de forma gratuita y otra paga con algunos beneficios
+                <p>Elegí la suscripción que mejor se adapte a vos:</p>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Estándar</label>
+                    <ul>
+                        <li>Acceso a películas y series</li><br><br>
+                    </ul>
+                        
                     
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Premium</label>
+                    <ul>
+                        <li>Acceso a ilimitado a películas y series, incluso los últimos estrenos!!</li>
+                        <li>Podés intercambiar mensajes con otras personas y puntuar lo que hayas visto</li>
+                        <li>Podés agregar a Mi lista, lo que querés ver en otro momento </li>
+                    </ul>
+                    </div>
+                    Si no convence o es mucho lio lo sacamos-->
+                <input type="checkbox" name="option" value="1">Deseo suscribirme al newsletter y me notifiquen de las últimas novedes </input>
                 
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">Premium</label>
-                <ul>
-                    <li>Acceso a ilimitado a películas y series, incluso los últimos estrenos!!</li>
-                    <li>Podés intercambiar mensajes con otras personas y puntuar lo que hayas visto</li>
-                    <li>Podés agregar a Mi lista, lo que querés ver en otro momento </li>
-                </ul>
-              </div>
-            <!-- Si no convence o es mucho lio lo sacamos-->
-            <br><br><br>
-            <input type="submit" value="Guardar">
-            <input type="reset" value="Borrar">
-        </form>
+                <br><br><br>
+                <input type="submit" value=" Crear cuenta ">
+            </form>
+        </div>
+        <br><br>
     </section>
-    <br><br>
+    
     <footer>
-        <p>Terminos y condiciones</p><br>
         <p>Preguntas frecuentes</p><br>
-        <p>Ayuda</p> <br>
         <p>©2024 PELIS++ OFICIAL. Películas Online. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
