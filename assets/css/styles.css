@@ -65,10 +65,20 @@ a {
 background-image: url(/assets/imagenes/fondo.jpg);
 width: 100%;
 height: 30vh;
-font-weight: lighter;
-color: azure;
-text-align: center;
-text-shadow: 2px 2px #003cff;
+
+}
+.banner h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 4px 6px #0011ff;
+  padding-top: 70px; 
+  transition: font-size 2s;
+
+} 
+.banner h2:hover{
+  font-size: 50px;
 }
 .grid {
     display: grid;
@@ -163,3 +173,74 @@ text-shadow: 2px 2px #003cff;
 @media only screen and (max-width: 800px) {
   .prev, .next,.text {font-size: 11px}
 } 
+
+.pie-pagina {
+  width: 100%;
+  background-color: var(--bac-color);
+  }
+.pie-pagina .caja1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  column-gap: 50px;
+  padding: 50px 0px;
+  }
+  .pie-pagina .caja1 .box h2{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 20px;
+  }
+  .pie-pagina .caja1 .box .redes {
+   text-align: center;
+   
+    }
+ 
+  .pie-pagina .caja1 .box i{
+    font-size: 20px;
+    margin: 25px;
+    border-radius: 60%;
+    padding: 1%;
+    box-shadow: 0 5px 10px rgb(0,0,0, .30);
+    transition: .3s ease;
+  }
+  .fa-facebook:hover{
+    background-color: #003cff;
+    color: white;
+    box-shadow: 0 0 5 #003cff
+                0 0 25 #003cff
+                0 0 60 #003cff;
+  }
+  .fa-instagram:hover{
+      background-color: rgba(247, 10, 10, 0.925);
+      color: white;
+      box-shadow: 0 0 2 orange
+                  0 25 0 yellow
+    }
+    .fa-x-twitter:hover{
+      background-color: black;
+      color: white;
+      box-shadow: 0 0 5  black
+                  0 0 25 black
+                  0 0 60 black;
+    }
+    .pie-pagina .caja1 .box .contacto {
+      text-align: center;
+    }
+    .pie-pagina .caja1 .box .contacto p {
+      text-align: center;
+      padding-top: 25px;
+      color:rgb(10, 59, 194);
+      font-weight: bold;
+      font-style: oblique;
+      
+       }
+       .pie-pagina .caja2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+        font-style: oblique;
+        color: black;
+         }   
