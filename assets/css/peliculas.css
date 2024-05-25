@@ -48,8 +48,8 @@ main>h1 {
 .pelicula_card {
     background-color: #1560c257;
     border-radius: 5px;
-    width: 300px;
-    height: 400px;
+    width: 310px;
+    height: 550px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -80,12 +80,12 @@ main>h1 {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: .3rem;
-    margin-bottom: .3rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
 }
 
 .pelicula_card img {
-    height: 200px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
 }

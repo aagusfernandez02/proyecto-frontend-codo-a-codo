@@ -197,7 +197,79 @@ const array_peliculas = [
         "genero": ["drama", "crimen", "suspenso"],
         "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwk0QuiWrfMEopih4s9GkOPu60FVlSnb661crrBZDan5uyz29gCY2IFEh-fgZ-SKZDmHvBiw",
         "tipo": "serie"
-    }
+    },
+    {
+        "titulo": "Road House (De profesión: duro)",
+        "fecha_estreno": "2024-3-8",
+        "descripcion": "Dalton es un exluchador de la UFC en horas bajas que acepta un trabajo como portero en un conflictivo bar de carretera de los Cayos de Florida, sólo para descubrir que este paraíso no es todo lo que parece... Remake de la película de 1989 con Patrick Swayze.",
+        "duracion": 114,
+        "genero": ["accion", "suspenso"],
+        "imagen": "https://image.tmdb.org/t/p/original/wmnVOIaTsGcRpZ9rLv2msbtqi3C.jpg",
+        "tipo": "pelicula"
+    },
+    {
+        "titulo": "Matrix Resurrections",
+        "fecha_estreno": "2021-12-23",
+        "descripcion": "En un mundo compuesto por dos realidades, lo cotidiano y lo oculto tras ella, Thomas Anderson se ve obligado de nuevo a ir tras el conejo blanco. Dicha elección continúa siendo la vía de acceso a Matrix, que esta vez es más poderosa e intrincada que en ocasiones anteriores.",
+        "duracion": 147,
+        "genero": ["ciencia ficcion", "aventura", "accion"],
+        "imagen": "https://image.tmdb.org/t/p/original/dLIwpCTf4QoW01pp85KP9jcfTpu.jpg",
+        "tipo": "pelicula"
+    },
+    {
+        "titulo": "Misión: Imposible - Sentencia mortal parte uno",
+        "fecha_estreno": "2023-7-13",
+        "descripcion": "Ethan Hunt (Tom Cruise) y la IMF emprenden la misión más peligrosa a la que nunca se han enfrentado: rastrear una nueva y aterradora arma que amenaza a toda la humanidad antes de que caiga en las manos de un enemigo todopoderoso y misterioso.",
+        "duracion": 163,
+        "genero": ["accion", "suspenso"],
+        "imagen": "https://image.tmdb.org/t/p/original/83sGKvCv2T2CulYbd40Aeduc7n2.jpg",
+        "tipo": "pelicula"
+    },
+    {
+        "titulo": "John Wick 4 ",
+        "fecha_estreno": "2023-03-23",
+        "descripcion": "John Wick descubre un camino para derrotar a la Alta Mesa. Pero para poder ganar su libertad, Wick deberá enfrentarse a un nuevo rival con poderosas alianzas en todo el mundo, capaz de convertir a viejos amigos en enemigos.",
+        "duracion": 170,
+        "genero": ["accion", "crimen", "suspenso"],
+        "imagen": "https://image.tmdb.org/t/p/original/mj2Z9HnRSIEk3n7yVPoOY4Uzzfh.jpg",
+        "tipo": "pelicula"
+    },
+    {
+        "titulo": "Sobrenatural",
+        "fecha_estreno": "2005-09-13",
+        "descripcion": "Cuando eran niños, Sam y Dean Winchester, perdieron a su madre debido a una fuerza demoníaca. Su padre les enseño como matar al mal que vive en los rincones obscuros y en las carreteras secundarias de América... Ahora los hermanos Winchester recorren el país luchando contra todo tipo de amenaza sobrenatural.",
+        "duracion": 43,
+        "genero": ["drama", "misterio", "ciencia ficcion"],
+        "imagen": "https://image.tmdb.org/t/p/original/AclV39BzzHNr2vyGpD5yA3am1Na.jpg",
+        "tipo": "serie"
+    },
+    {
+        "titulo": "Vikingos",
+        "fecha_estreno": "2014-02-27",
+        "descripcion": "Ragnar Lothbrok, el héroe más grande de su época. se levanta para convertirse en el rey de las tribus vikingas. Además de ser un guerrero valiente, Ragnar encarna las tradiciones nórdicas de la devoción a los dioses, la leyenda dice que él era un descendiente directo de Odín, el dios de la guerra y los guerreros.",
+        "duracion": 46,
+        "genero": ["drama", "accion", "aventura"],
+        "imagen": "https://image.tmdb.org/t/p/original/uNFSCxeZsZVIQ1TrD6mzu6uMQEb.jpg",
+        "tipo": "serie"
+    },
+    {
+        "titulo": "Su Ji and U Ri",
+        "fecha_estreno": "2014-03-25",
+        "descripcion": "Su Ji es una celebridad en el mundo de la medicina y la televisión, conocida por su belleza y su habilidad como psiquiatra. Sin embargo, su vida perfecta comienza a derrumbarse cuando conoce a U Ri, un médico talentoso y justo que se une al hospital donde ella trabaja",
+        "duracion": 30,
+        "genero": ["drama", "romantica"],
+        "imagen": "https://image.tmdb.org/t/p/original/bGVdZ8nc99GIwCDxmXpGP0oCSzT.jpg",
+        "tipo": "serie"
+    },
+    {
+        "titulo": "Los Simpson",
+        "fecha_estreno": "1989-12-17",
+        "descripcion": "El día a día de una peculiar familia formada por Homero, Marge, Bart, Maggie y Lisa Simpson y otros divertidos personajes de la localidad norteamericana de Springfield.",
+        "duracion": 22,
+        "genero": ["familia", "animacion", "comedia"],
+        "imagen": "https://image.tmdb.org/t/p/original/u8BMLmwoc7YPHKSWawOOqC1c8lJ.jpg",
+        "tipo": "serie"
+    },
 ];
 let generosSeleccionados = [];
 let tipoSeleccionado = ["pelicula", "serie"];
