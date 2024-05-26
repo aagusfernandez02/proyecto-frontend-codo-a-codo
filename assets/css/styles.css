@@ -100,11 +100,13 @@ height: 30vh;
     }
     
     
-   .caras{display: none}
+   .caras {width:80%;
+    margin:0 auto;
+    }
    
-    iframe {
-        vertical-align: middle;
-       
+    .caras iframe {
+        vertical-align: center;
+       margin: 15%;
     
     }
 .slide{
@@ -170,8 +172,14 @@ height: 30vh;
 }
 
 
-@media only screen and (max-width: 800px) {
-  .prev, .next,.text {font-size: 11px}
+@media (max-width: 1015px) {
+  .prev, .next,.text {font-size: 11px;
+  color: #fff;
+  }
+  .grid {width: 60vm;}
+  .caras iframe{ 
+    width: 70%;
+    margin:15%;}
 } 
 
 .pie-pagina {
