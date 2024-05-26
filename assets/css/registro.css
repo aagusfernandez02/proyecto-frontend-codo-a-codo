@@ -1,35 +1,48 @@
 .form{
     width: 40vw;
     height: 120vh;
-    margin-left: 360px;
+    margin-left: 30%;
     margin-top: 30px;
-    padding-left: 100px;
+    padding-left: 10%;
     padding-right: 100px;
     padding-top: 40px;
     font-size: large;
     border: 5px rgb(10, 10, 80)solid;
     background-color: rgba(153, 187, 231, 0.842)
 }
+.formContainer .form form input.campo { width: 90%;}
+.formContainer .form form select.opcion { width: 90%;}
 .titulos{
     text-align: center;
-    width: 85vh;
-    margin-left: 360px;
+    width: 80vm;
+    margin-left: 20vm;
+    margin-right: 20vm;
     background-color: rgba(153, 187, 231, 0.89)
     
 }
 .tituloPpal{
     font-weight: bold;
 }
+
 .formContainer{
     height: 180vh;
     width: 100%;
     margin: 0px;
-    padding-top: 50px;
+    /*padding-top: 50px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 50px;*/
     background-image: url(/assets/imagenes/fondo.jpg);
 }
-footer{
-    margin-bottom: 0%;
-    background-color: rgb(153, 187, 231)
-}
+@media (max-width: 1015px) {
+   .formcontainer {width: 50vm;}
+   .formContainer .form {
+   width: 80%;
+   margin-left: 10%;  
+   }
+   
+   
+  } 
+ 
+  
+  
+  
