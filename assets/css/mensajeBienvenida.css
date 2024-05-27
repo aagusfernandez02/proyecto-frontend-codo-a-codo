@@ -1,0 +1,16 @@
+.bienvenida p {
+    font-size: x-large;
+    color: rgb(78, 230, 116);
+    font-weight: bold;
+    font-style: oblique; 
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    
+}
+
+.bienvenida {
+    background-color: rgb(21, 24, 230);
+    height: 70vh;
+    width: 100%;
+    padding-top: 10%;
+}

@@ -22,8 +22,7 @@
             
             <li class="active"><a href="/peliculas.html">Peliculas y series</a></li>
             <li><a href="registro.html">Registro</a></li>
-            <li><a href="/iniciar_sesion.html">Iniciar Sesion</a></li>
-            <li><a href="/iniciar_sesion.html">Inicio</a></li>
+            <li><a href="/index.html">Inicio</a></li>
         </ul>
     </nav>
     
@@ -36,7 +35,7 @@
         
         <div class="form">
 
-            <form action="" id="form register" method="get">
+            <form action="/mensajeBienvenida.html" id="form register" method="get" onsubmit="return validacion();">
                 
                 <label for="email">Correo electrónico*</label><br>
                 <input class="campo" type="email" id="email" placeholder="ejemplo@gmail.com" ><br><br>
@@ -91,9 +90,11 @@
                 
                 <br><br><br>
                 <input type="submit" value=" Crear cuenta ">
+                    <p class="alerta" id="alerta"></p>
             </form>
         </div>
         <br><br>
+        <script src="/assets/js/registro.js"></script>
     </section>
     <footer class="pie-pagina">
         <div class="caja1"> 
