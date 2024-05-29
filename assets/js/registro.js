@@ -8,7 +8,7 @@ function validacion() {
 
     var nombre = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
     var apellido = /^[a-zA-ZÀ-ÿ\s]{2,40}$/;
-    var contraseña = /^[a-zA-ZÀ-ÿ\s-$-#].{8,12}$/;
+    var contraseña = /^[a-zA-ZÀ-ÿ0-9_.+-.#$&\s].{5,12}$/;
     var coreeo = /^[a-zA-Z0-9_.+-]+@(yahoo|gmail|hotmail|outlook)\.(com|.ar)$/;
     var fecha = /^([0-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;
     
