@@ -12,6 +12,14 @@
 }
 .formContainer .form form input.campo { width: 90%;}
 .formContainer .form form select.opcion { width: 90%;}
+.formContainer .form form input.crear {
+    font-size: .9rem;
+    border-radius: 4px;
+    background-color: blue;
+    margin-left: 30%;
+    font-weight: bold;
+    color: white;
+}
 .titulos{
     text-align: center;
     width: 80vm;
@@ -22,6 +30,9 @@
 }
 .tituloPpal{
     font-weight: bold;
+}
+#newsletter { font-size: .8rem;
+
 }
 
 .formContainer{
@@ -46,7 +57,8 @@
     {
         width: 50%;
         background-color: bisque;
-        color: mediumorchid;
+        color: red;
         border-radius: 0.5rem;
         box-shadow: 0.25rem 0.25rem .5 darkblue;
+        font-size: .85rem;
   }
