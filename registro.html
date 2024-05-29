@@ -35,6 +35,20 @@
             <input class="campo" type="password" id="password" placeholder="Contraseña"> <br>
             <input type="submit" value="Login">
         </form>
+                    
+     <!-- menu hamburguesa -->
+    
+        <input type="checkbox" id="menu-toggle"class="menu-toggle"> 
+        <label for="menu-toggle" class="menu-toggle-icon">
+            <i class="fas fa-bars"></i>
+        </label> 
+
+        <ul class="nav-links mobile-nav">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/peliculas.html">Peliculas y series</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="/index.html">Populares</a></li>                
+        </ul>
                
     </nav>
     
@@ -76,28 +90,7 @@
                     <option value="MX">México</option>
                     <option value="UY">Uruguay</option>
                 </select><br>
-                <!--En caso que tengamos opc de ver  pelis  de forma gratuita y otra paga con algunos beneficios
-                <p>Elegí la suscripción que mejor se adapte a vos:</p>
-                <br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Estándar</label>
-                    <ul>
-                        <li>Acceso a películas y series</li><br><br>
-                    </ul>
-                        
-                    
-                    </div>
-                    <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Premium</label>
-                    <ul>
-                        <li>Acceso a ilimitado a películas y series, incluso los últimos estrenos!!</li>
-                        <li>Podés intercambiar mensajes con otras personas y puntuar lo que hayas visto</li>
-                        <li>Podés agregar a Mi lista, lo que querés ver en otro momento </li>
-                    </ul>
-                    </div>
-                   Si no convence o es mucho lio lo sacamos-->
+                
                 <label id="newsletter">
                    <input type="checkbox" name="option" value="1" id="newsletter">Deseo suscribirme al newsletter y me notifiquen de las últimas novedes </input>
                 </label>
