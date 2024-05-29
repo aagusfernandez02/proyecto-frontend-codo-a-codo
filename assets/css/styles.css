@@ -35,7 +35,7 @@ a {
 }
 
 .header_container ul{
-    display: flex;
+    /*ASI ESTABA EN MI TP.CLON display: flex;*/
     list-style-type: none;
 }
 
