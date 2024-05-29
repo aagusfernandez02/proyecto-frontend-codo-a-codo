@@ -1,5 +1,5 @@
 .bienvenida p {
-    font-size: x-large;
+    font-size: 115%;
     color: rgb(16, 76, 155);
     text-shadow: 5px 3px white;
     font-weight: bold;
@@ -18,7 +18,7 @@
 }
 .bienvenida{
     background-color: rgba(240, 255, 255, 0.63);
-    margin-left: 30%;
-    margin-right: 30%; 
+    margin-left: 20%;
+    margin-right: 20%; 
     padding-left: 0%;   
 }
