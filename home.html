@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/pelicula.ico" type="image/x-icon">
     <title>Pelis++</title>
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <!--iconos footer-->
+ <!--iconos-->
+
     <script src="https://kit.fontawesome.com/eef974bdc3.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/home.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <header>
         <nav class="header_container">
             <h1 class="logo"><span>P</span>elis<span>++</span></h1>
-        
+            
          <!-- navegador de escritorio -->
-            <ul class="nav-links desktop-nav" id="nav-links-desktop">         
-                <li class="active"><a href="/home.html">Home</a></li>
-                <li><a href="/peliculas.html">Peliculas <br>y series</a></li>
+            <ul class="nav-links desktop-nav" id="nav-links-desktop">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/peliculas.html">Peliculas y series</a></li>
                 <li><a href="registro.html">Registro</a></li>
-                <li ><a href="/index.html">Populares</a></li><br>
-                 
+                <li class="active"><a href="/home.html">Populares</a></li>
             </ul>
-            <form action="/index.html" method="post">
-                <label for="email"></label>
-                <input class="campo" type="email" id="email" placeholder="Correo electrónico" ><br>
-                <label for="password"></label>
-                <input class="campo" type="password" id="password" placeholder="Contraseña"> <br>
+            <form action="/home.html" method="get">
+                <label for="correo"></label>
+                <input class="campo" type="email" id="correo" placeholder="Correo electrónico" ><br>
+                <label for="contraseña"></label>
+                <input class="campo" type="password" id="contraseña" placeholder="Contraseña"> <br>
                 <input type="submit" value="Login">
             </form>
-                    
+
          <!-- menu hamburguesa -->
         
             <input type="checkbox" id="menu-toggle" class="menu-toggle"> 
@@ -45,66 +47,107 @@
             </label> 
 
             <ul class="nav-links mobile-nav">
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/peliculas.html">Peliculas y series</a></li>
                 <li><a href="registro.html">Registro</a></li>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/index.html">Populares</a></li>                
+                <li><a href="/home.html">Populares</a></li>                
             </ul>
-
+            
         </nav>
     </header>
+
     <main>
-        <section class="container_home">
-            <div class="intro_home">
-                <h1 class="logo"><a href="/index.html"><span>P</span>elis<span>++</span></a></h1><br>
-                <p>Bienvenidos a pelis ++ somos un grupo de estudiantes que se juntaron para crear una pagina única en 
-                dónde podrán ver sus series y películas favoritas con la mejor calidad!
-                Contamos con una gran variedad de películas y series desde clásicos atemporales hasta las últimas 
-                novedades, estamos aquí para llevarte en un viaje a través de la magia del cine y la televisión. Así 
-                que ponete cómodo, prepara algo rico para tomar, algo rico para comer y deja que la diversión comience. 
-                ¿Listos para sumergirse en un universo lleno de emociones, risas y suspenso?
-                </p>
+        <div class="banner">
+            <h2>El Mejor lugar para difrutar de tus series y películas preferidas</h2>
+                        
+        </div>
+        
+        <div class="grid">   
+            <div class="carrusel">
+               <h2>Recomendadas</h2>
             </div>
-            <br><br>
-            <div class="botonARegistro"><a href="/registro.html" >Ir a Pelis++</a></div>
-            <br><br><br>
-            <div class="preguntas_home">
-                <h2>Preguntas frecuentes</h2><br><br>
-                <H3>¿Qué es Pelis++ ?</h3>
-                <p>Pelis++ es un sitio web de streaming que te permitirá ver películas y series online gratis desde 
-                cualquier dispositivo en la mejor calidad siempre que se encuentre disponible en nuestro portal.
-                </p><br>
-                <h3>¿Tengo que pagar?</h3>
-                <p>No, es total y absolutamente gratuito</p><br>
-                <h3>Cuando quieras, donde quieras!</h3>
-                <p>Ya sea que tengas un dispositivo móvil, pc, tablet o tv, vas a poder disfrutar de todo el contenido sin problemas.</p><br>
-            </div>
-        </section>
+             </div> 
+            
+             <div class="slide">
+
+                <div class="caras">
+                    
+                    <iframe width="800" height="315" src="https://www.youtube.com/embed/Y0ZsLudtfjI?si=iRFjHVuJbFZRD10h" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+               
+                </div>
+
+                                
+                <div class="caras">
+                    
+                    <iframe width="800" height="315" src="https://www.youtube.com/embed/qjnvX44LoQw?si=GSyXq29FzpK8jCp2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+                 
+                </div>
+                
+                <div class="caras">
+                 
+                    <iframe width="800" height="315" src="https://www.youtube.com/embed/Imehr2YwCjo?si=QeDoj_CeSDBwLbjA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+                
+                </div>
+
+                <div class="caras">
+                    
+                    <iframe width="800" height="315" src="https://www.youtube.com/embed/LCCKKUiW2_I?si=VgR8wdoIedSdsPpb" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+               
+                <BR>
+                
+               <div class="circulo" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                </div> 
+                 </div>
     </main>
+<script src="/assets/js/home.js"></script>
+
+    
     <footer class="pie-pagina">
-        <div class="caja1"> 
-          <div class="box">
-              <h2>Seguinos</h2>
-         
-              <div class="redes">
-              <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
-              <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a>
-              </div>
-          </div>     
-          
-          <div class="box">   
-              <div class="contacto">
-                  <h2>Contacto</h2>
-              <p>MAIL: pelis++@gmail.com </p>
-              </div>
-          </div>
-         </div>
-      <div class="caja2">
-          <small>&COPY; 2024 <b>Pelis++</b> - Todos los Derecho Reservados</small>
-      </div> 
-          
-          
+      <div class="caja1"> 
+        <div class="box">
+            <h2>Seguinos</h2>
+       
+            <div class="redes">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"> </i></a>
+            </div>
+        </div>     
+        
+        <div class="box">   
+            <div class="contacto">
+                <h2>Contacto</h2>
+            <p>MAIL: pelis++@gmail.com </p>
+            </div>
+        </div>
+       </div>
+    <div class="caja2">
+        <small>&COPY; 2024 <b>Pelis++</b> - Todos los Derecho Reservados</small>
+    </div> 
+        
+        
     </footer>
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>

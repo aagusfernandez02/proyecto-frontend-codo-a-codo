@@ -15,31 +15,30 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Honk&display=swap" rel="stylesheet">
-            <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    
         <link rel="stylesheet" href="assets/css/mensajeBienvenida.css">
     </head>
     
     <body>
         <nav class="header_container">
-            <h1 class="logo"><a href="/index.html"><span>P</span>elis<span>++</span></a></h1>
-            <ul>
+            <h1 class="logo"><a href="/home.html"><span>P</span>elis<span>++</span></a></h1>
+           
                 <!-- navegador de escritorio -->
-
-                <li><a href="/home.html">Home</a></li>
+            <ul class="nav-links desktop-nav" id="nav-links-desktop">
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/peliculas.html">Peliculas y series</a></li>
                 <li><a href="/registro.html">Registro</a></li>
-                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/home.html">Populares</a></li>
                 <!-- form. de login-->
-
-                <form action="/index.html" method="post">
-                    <label for="email"></label>
-                    <input class="campo" type="email" id="email" placeholder="Correo electrónico" ><br>
-                    <label for="password"></label>
-                    <input class="campo" type="password" id="password" placeholder="Contraseña"> <br>
+            </ul>
+                <form action="/home.html" method="get">
+                    <label for="correo"></label>
+                    <input class="campo" type="email" id="correo" placeholder="Correo electrónico" ><br>
+                    <label for="contraseña"></label>
+                    <input class="campo" type="password" id="contraseña" placeholder="Contraseña"> <br>
                     <input type="submit" value="Login">
                 </form>
-            </ul>
+            
              
          <!-- menu hamburguesa -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle"> 
@@ -48,17 +47,17 @@
             </label> 
 
             <ul class="nav-links mobile-nav">
-                <li><a href="/home.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/peliculas.html">Peliculas y series</a></li>
                 <li><a href="/registro.html">Registro</a></li>
-                <li><a href="/index.html">Populares</a></li>                
+                <li><a href="/home.html">Populares</a></li>                
             </ul>
         </nav>
         <section class="caja">
         <div class="bienvenida">
 
-            <p>Te Registraste de forma exitosa</p>
-            <p> Muchas Gracias!!!</p>
+            <p id="comentario">Te Registraste de forma exitosa</p>
+            <p id="comentario2"> Muchas Gracias!!!</p>
 
         </div>
         </section>
